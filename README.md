@@ -10,6 +10,14 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
 ## Useful commands
 
+deployment:
+
+```
+aws sso login --profile sso-dev01-admin
+cdk deploy  CertStackDev01 --profile sso-dev01-admin
+```
+
+
 * `npm run build`   compile typescript to js
 * `npm run watch`   watch for changes and compile
 * `npm run test`    perform the jest unit tests
