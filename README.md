@@ -7,6 +7,8 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 # References
 
 * [CDK examples in typescript](https://github.com/aws-samples/aws-cdk-examples/tree/master/typescript)
+* [AWS SDK v3](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/welcome.html)
+* [AWS SDK v3 API reference](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/index.html)
 
 ## Useful commands
 

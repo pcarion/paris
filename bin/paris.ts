@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { CertStack } from '../lib/cert-stack';
+import { CertStack } from '../lib/01-cert-stack';
+import { CommonStack } from '../lib/05-common-stack';
 
 import { config as devConfig } from './env/dev'
 
@@ -16,6 +17,11 @@ const dev01Environment: cdk.Environment = {
 const app = new cdk.App();
 
 new CertStack(app, 'CertStackDev01',  {
+  env: dev01Environment,
+  ...devConfig,
+});
+
+new CommonStack(app, 'CommonStackDev01',  {
   env: dev01Environment,
   ...devConfig,
 });
