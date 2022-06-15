@@ -3,6 +3,7 @@ import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
 import { CertStack } from '../lib/01-cert-stack';
 import { CommonStack } from '../lib/05-common-stack';
+import { WebappStack } from '../lib/10-webapp';
 
 import { config as devConfig } from './env/dev'
 
@@ -22,6 +23,11 @@ new CertStack(app, 'CertStackDev01',  {
 });
 
 new CommonStack(app, 'CommonStackDev01',  {
+  env: dev01Environment,
+  ...devConfig,
+});
+
+new WebappStack(app, 'WebappStackDev01',  {
   env: dev01Environment,
   ...devConfig,
 });

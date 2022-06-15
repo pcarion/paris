@@ -5,5 +5,6 @@ export const config:AppProps = {
   // dub-domains must end with a dot
   apiSubDomainName: "api.",
   authSubDomainName: "auth.",
+  webAppSubDomainName: "app.",
   userPoolName: "paris"
 }
